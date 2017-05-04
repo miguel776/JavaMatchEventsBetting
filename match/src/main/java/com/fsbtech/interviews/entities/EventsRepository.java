@@ -9,7 +9,7 @@ import java.util.Set;
  *  The repository
  *
  *     - The events repository is  a Map<Integer, Event> static from the class EventsRepository.
- *		- A static variable can be used without the need for creating an instance of a class.
+ *	   - A static variable can be used without the need for creating an instance of a class.
  *
  *
  *  Thread safe
