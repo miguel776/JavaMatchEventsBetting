@@ -3,10 +3,10 @@ The task includes implementing a client, com.fsbtech.interviews.Client, using th
 To keep the task in its time limitation we require the data to be only in-memory and no write to secondary resource (file, database) is required.
 
 Some notes on the data structure:
- Category corresponds to a type of a sport o E.g. “Football”, “Tennis”
- Each Category has many SubCategory
+ + Category corresponds to a type of a sport o E.g. “Football”, “Tennis”
+ + Each Category has many SubCategory
 o E.g. in Football, “Premier League” or “Champions League” o E.g. in Tennis, “French Open” or “Wimbledon”
- Each SubCategory has many Event
++  Each SubCategory has many Event
 o E.g. in Football, “Manchester United v Arsenal” o E.g. in Tennis, “Andy Murray v Novak Djokovic”
  Each Event has many different betting markets, each represented by a MarketRefType
 o E.g. in Football, “Home/Draw/Away” for betting on the final outcome of the match o E.g. in Tennis, “Home/Away” for betting on the winner
