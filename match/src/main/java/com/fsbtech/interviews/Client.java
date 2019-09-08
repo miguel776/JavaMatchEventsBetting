@@ -5,12 +5,9 @@ import com.fsbtech.interviews.entities.MarketRefType;
 
 import java.util.Collection;
 
-public interface Client
-{
+public interface Client{
 	
-
-
-	/**
+   /**
      * Adding event to event repository
      *
      * @param event - Event object representing a new Event to add to the repository.
