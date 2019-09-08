@@ -6,23 +6,19 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- *  The repository
- *
- *     - The events repository is  a Map<Integer, Event> static from the class EventsRepository.
- *		- A static variable can be used without the need for creating an instance of a class.
- *
- *
- *  Thread safe
- *
- *		- The Map is not synchronized (not thread-safe). Collections.synchronizedMap() method returns
- *		  a synchronized (thread-safe) map backed by the specified map.
- *		- In order to guarantee serial access, it is critical that all access to
- *		  the backing map is accomplished through the returned map.
- *     - It is done in the class EventsRepository by the implementation of static methods.
- *
- * @author miguelangel
- *
- */
+*  The repository
+*     - The events repository is  a Map<Integer, Event> static from the class EventsRepository.
+*		- A static variable can be used without the need for creating an instance of a class.
+*
+*  Thread safe
+*		- The Map is not synchronized (not thread-safe). Collections.synchronizedMap() method returns
+*		  a synchronized (thread-safe) map backed by the specified map.
+*		- In order to guarantee serial access, it is critical that all access to
+*		  the backing map is accomplished through the returned map.
+*     - It is done in the class EventsRepository by the implementation of static methods.
+*
+* @author miguelangel
+*/
 public class EventsRepository {
 
     public static Map<Integer, Event> repository = Collections.synchronizedMap(new HashMap<Integer, Event>());
