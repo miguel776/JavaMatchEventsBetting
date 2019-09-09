@@ -23,9 +23,3 @@ The client is used for both managing and retrieving the data. For instance;
 market, regardless of the Category)
  +  Return the entire data structure as formatted output
 Once an Event has completed, it is no longer of any relevance to the client. Similarly, a SubCategory with no valid events is also of no relevance to the client.
-
-Before you start to write I have considered:
- + The code is clear and efficient
- + The solution should handle both basic and edge cases
- + The solution should provide good test coverage
- +  Will it work for multi-threaded environment?
