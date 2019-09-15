@@ -40,12 +40,10 @@ public class ClientImpl implements Client {
     * Update event status to completed.
     *
     * > Exception handling
-    *
     *		- NullPointerException is a run-time exception which is not recommended to catch it.
     *		- We catch the NullPointerException and except using an if-condition.
     *
     * > Thread safe
-    *
     *		- The Repository is synchronized,  it is defined like this in the class.
     *		- The event object is an immutable object, this improves the arrangement to be treated as multi thread.
     *		- An  immutable object unmodifiable or unchangeable, Once string object is
@@ -71,16 +69,13 @@ public class ClientImpl implements Client {
     * Add marketRefType to an existing event
     *
     * > Exception handling
-    *
     *		- It is handled a NullPointerException,  an IllegalAccessException and an InstantiationException
     *
     * > Multithreading
-    *
     *		- The Repository is synchronized,  it is defined like this in the class.
     *		- The event object is an immutable object, this improves the arrangement to be treated as multi-thread.
     *
     * > immutable object
-    *
     *		- An  immutable object unmodifiable or unchangeable, Once string object is
     *		  created its data or state can't be changed and it has to create a new string object is created.
     *		- In this method is used Shallow copy to create, shallow copy concept copies everything values/type/fields
@@ -117,16 +112,13 @@ public class ClientImpl implements Client {
     * Remove marketRefType from an existing event
     *
     * > Exception handling
-    *
     *      - It is handled a NullPointerException,  an IllegalAccessException and an InstantiationException
     *
     * > Multithreading
-    *
     *      - EventRepository is thread-safe, it is defined like this in the EventRepository class.
     *      - The event object is an immutable object, this improves the arrangement to be treated as multi-thread.
     *
     * > immutable object
-    *
     *      - An immutable object is unmodifiable or unchangeable, once created its data or state can't be changed
     *        and a new object has to be created.
     *      - In this method a shallow copy of the collection of MarketRefTypes is created
@@ -163,10 +155,9 @@ public class ClientImpl implements Client {
 
    /**
     * Collection of incomplete event names based on provided filter.
-    * If argument is null, it should include every possible values.
-    *
-    * 	   - It is implemented an algorithm to iterate and filter the events repository
-    *  	 according to the category, subcategory,  the betting markets and getCompleted.
+    *   - If argument is null, it should include every possible values.
+    *   - It is implemented an algorithm to iterate and filter the events repository
+    *  	  according to the category, subcategory,  the betting markets and getCompleted.
     *
     * @param cat - Cetegory ref identify the category to filter by.
     * @param subcat - SubCategory ref identify the sub-category to filter by.
@@ -205,7 +196,6 @@ public class ClientImpl implements Client {
 
    /**
     * Formatted structure
-    *
     *  - The events repository is formatted using Google's Gson library.
     *  - Java serialization/deserialization library that can convert Java Objects into JSON and back.
     *
